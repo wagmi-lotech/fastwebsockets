@@ -195,7 +195,7 @@ impl<'f, S> FragmentCollectorRead<S> {
 }
 
 /// Accumulates potentially fragmented [`Frame`]s to defragment the incoming WebSocket stream.
-struct Fragments {
+pub struct Fragments {
   fragments: Option<Fragment>,
   opcode: OpCode,
 }
